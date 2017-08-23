@@ -1,2 +1,2 @@
 # node-xcb
-Docker image for run Chrome headless
+Docker image for running Node.js and Chrome with `--headless` option.
