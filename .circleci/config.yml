@@ -20,4 +20,5 @@ jobs:
             echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin
             docker build -t regviz/node-xcb .
             docker tag regviz/node-xcb regviz/node-xcb:node-16
-            docker push regviz/node-xcb
+            docker push regviz/node-xcb:node-16
+            docker push regviz/node-xcb:latest
