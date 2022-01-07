@@ -17,6 +17,6 @@ jobs:
           docker_layer_caching: true
       - run:
           command: |
-            docker build . regviz/node-xcb:16
+            docker build -t regviz/node-xcb:16 .
             echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin
             docker push regviz/node-xcb:16
