@@ -15,4 +15,8 @@ jobs:
       - setup_remote_docker:
           version: 20.10.11
           docker_layer_caching: true
-      - run: docker build . node-xcb:latest
+      - run:
+          command: |
+            docker build . regviz/node-xcb:16
+            echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin
+            docker push regviz/node-xcb:16
