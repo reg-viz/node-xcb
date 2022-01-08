@@ -4,6 +4,7 @@ RUN apt-get update -y \
     && apt-get install -yq \
     ca-certificates \
     fonts-liberation \
+    git \
     libappindicator3-1 \
     libasound2 \
     libatk-bridge2.0-0 \
