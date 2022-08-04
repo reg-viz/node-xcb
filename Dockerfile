@@ -5,7 +5,7 @@ RUN apt-get update -y \
     ca-certificates \
     fonts-liberation \
     git \
-    libappindicator3-1 \
+    libayatana-appindicator3-1 \
     libasound2 \
     libatk-bridge2.0-0 \
     libatk1.0-0 \
