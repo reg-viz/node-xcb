@@ -22,7 +22,7 @@ jobs:
           docker_layer_caching: true
       - run:
           command: |
-            TAG_NODE_MAJOR=node-16
+            TAG_NODE_MAJOR=node-18
             TAG_VERSION=node-$CIRCLE_TAG
             echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin
             docker build -t regviz/node-xcb .
